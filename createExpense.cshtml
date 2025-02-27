@@ -1,0 +1,138 @@
+@{
+    ViewData["Title"] = "Create / Edit";
+}
+<header>
+    <style>
+        body {
+            background-image: url( https://tse2.mm.bing.net/th?id=OIP.aYJviSN65CFTHkHbkYYyOQHaHa&pid=Api&P=0&h=180);
+            color: white;
+            font-size:40px;
+            font-weight:bolder;
+        }
+
+        .titre {
+            background-color: #E31C79;
+            color: white;
+            padding: 10px;
+            font-size: 80px;
+            font-weight: bolder;
+        }
+        
+        .form-div{
+            background: linear-gradient(to bottom, #E31C79, #4169e1);
+            padding: 35px;
+            border: 5px solid white;
+            border-radius: 15px;
+        }
+
+        .image-Vache-Div {
+            background: #4169e1;
+            padding: 15px;
+            border: 10px solid white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .image-Vache {
+            border: 10px solid white;
+            border-radius: 15px;
+            width: 350px;
+            height: auto;
+        }
+
+        .informations-Div {
+            background: #4169e1;
+            padding: 15px;
+            color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .boutons {
+            padding: 15px;
+            width: 30%;
+            font-size: 30px;
+            background: #0a998c;
+            border:5px;
+            border-radius:30px;
+        }
+
+        .boutons:hover {
+            background: orange;
+        }
+
+        .footer1 {
+            background: black;
+            color: white;
+            padding: 35px;
+            font-size: 24px;
+            border-top: 10px solid white;
+            text-align: center;
+        }
+
+
+        .footer {
+            background: black;
+            color: white;
+        }
+
+    </style>
+</header>
+@model CoreNetTest.Models.Expense
+
+<div style="background:white;">
+
+    @* ----------Titre----------*@
+    <div class="text-center">
+        <h1 class="titre display-4">Creer ou edit un Commande</h1>
+    </div>
+
+    @* ----------Form----------*@
+    <div class="form-div">
+        <form asp-action="CreateEditExpenseForm" asp-asp-controller="Home">
+            <input hidden class="form-control" type="number" placeholder="0" asp-for="Id"/>
+
+            <label class="mt-4">Value $</label>
+            <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01"/>
+
+            <label class="mt-4">Description</label>
+            <input class="form-control" type="text" placeholder="Add a dexcription" asp-for="Description"/>
+
+            <button class="btn btn-primary mt-4 boutons" type="submit">Sumbit</button>
+        </form>
+    </div>
+
+    @* ----------Images----------*@
+    <div class="image-Vache-Div">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.yuO_l-dbVn8n0vulwb_hVgHaE8&pid=Api&P=0&h=180" class="image-Vache" />
+        <img src="https://tse1.mm.bing.net/th?id=OIP.Y8HONMRN7j1hIdkHvBciOQHaFn&pid=Api&P=0&h=180" class="image-Vache" />
+        <img src="https://tse1.mm.bing.net/th?id=OIP.pIZ9VFlqiZdZf5WelartYAHaE8&pid=Api&P=0&h=180" class="image-Vache" />
+    </div>
+
+    @* ----------Info----------*@
+    <div class="informations-Div">
+        <h1>
+            Pourquoi choisir Moo & Co.?
+        </h1>
+
+        <h4>
+            Chez  Moo & Co, nous sommes fiers d’être le leader mondial de l’exportation de vaches.
+            Forts de notre expertise et de notre engagement envers la qualité, nous collaborons avec des éleveurs du monde entier
+            pour offrir les meilleures races bovines. Notre mission est de garantir un élevage durable et éthique,
+            tout en répondant aux besoins de nos partenaires internationaux.
+            Bienvenue dans l’univers de l’excellence bovine !
+        </h4>
+    </div>
+
+    @* ----------Section Fait----------*@
+    <div class="footer1 display-1">
+        <h1>Fait amusantes sur les vaches!!</h1>
+
+        <h4>
+            Chaque vache a une voix unique, et leurs meuglements permettent aux autres de les reconnaître.
+        </h4>
+    </div>
+</div>
