@@ -1,0 +1,139 @@
+@{
+    ViewData["Title"] = "Merci";
+}
+<header>
+    <style>
+        body {
+            background-image: url( https://tse2.mm.bing.net/th?id=OIP.aYJviSN65CFTHkHbkYYyOQHaHa&pid=Api&P=0&h=180);
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .titre {
+            background-color: #E31C79;
+            color: white;
+            padding: 10px;
+            font-size: 80px;
+            font-weight: bolder;
+        }
+
+        .image-Check-Div {
+            background: #4169e1;
+            padding: 15px;
+            border: 10px solid white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .image-Check {
+            border: 10px solid white;
+            border-radius: 15px;
+            width: 50%;
+            height: auto;
+        }
+
+        .informations-Div {
+            background: #4169e1;
+            padding: 15px;
+            color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align: left;
+            margin:10px;
+        }
+
+        .informations-Commande-Div{
+            background: #4169e1;
+            padding: 15px;
+            border: 10px solid white;
+            border-radius: 15px;
+        }
+
+        .retournez-div {
+            background: linear-gradient(to bottom, #4169e1, #E31C79);
+            padding: 35px;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align:center;
+        }
+
+        .boutons {
+            padding: 15px;
+            width: 30%;
+            font-size: 30px;
+            background: #0a998c;
+            border: 5px;
+            border-radius: 30px;
+        }
+
+        .boutons:hover {
+            background: orange;
+        }
+
+        .footer1 {
+            background: black;
+            color: white;
+            padding: 35px;
+            font-size: 24px;
+            border-top: 10px solid white;
+            text-align: center;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+        }
+
+    </style>
+</header>
+@model CoreNetTest.Models.Expense
+
+<div style="background:white;">
+
+    @* ----------Titre----------*@
+    <div class="text-center">
+        <h1 class="titre display-4">Merci!!</h1>
+    </div>
+
+    @* -------Div de Remerci----------*@
+    <div class="image-Check-Div">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/017/110/950/original/green-check-mark-icon-animation-animated-check-mark-on-white-background-free-video.jpg" class="image-Check" />
+        <div class="informations-Div">
+            <h1>
+                Merci pour votre achat chez Moo & Co. !
+
+            </h1>
+            <br />
+            <h4>
+                Nous vous remercions de votre confiance et de votre engagement envers la qualité. Chez Moo & Co, nous mettons tout en œuvre pour vous offrir les meilleures vaches et un service irréprochable.
+                Si vous avez la moindre question ou besoin d'assistance, notre équipe est toujours à votre disposition.
+                À bientôt et encore merci !
+            </h4>
+        </div>
+    </div>
+
+    @* ----------Div Info Produit----------*@
+    <div class="informations-Commande-Div">
+        <h1>Information produits ICI</h1>
+        <h1>Information produits ICI</h1>
+        <h1>Information produits ICI</h1>
+    </div>
+
+    @* ----------Div Pour Retorunzez----------*@
+    <div class="retournez-div">
+        <h1>Pour retournez au Home</h1>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary boutons">Home</a>
+    </div>
+
+    @* ----------Section Fait----------*@
+    <div class="footer1 display-1">
+        <h1>Fait amusantes sur les vaches!!</h1>
+
+        <h4>
+            Elles aiment la musique ! Des études montrent que la musique douce les rend plus détendues et peut même améliorer leur production de lait.
+        </h4>
+    </div>
+</div>
