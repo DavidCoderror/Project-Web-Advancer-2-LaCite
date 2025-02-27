@@ -1,0 +1,146 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url( https://tse2.mm.bing.net/th?id=OIP.aYJviSN65CFTHkHbkYYyOQHaHa&pid=Api&P=0&h=180);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+        .titre{
+            background-color: #E31C79;
+            color: white;
+            padding: 10px; 
+            font-size: 24px; 
+            font-weight:bolder;
+        }
+
+        .image-Vache-Div{
+            background: linear-gradient(to bottom, #E31C79, #4169e1);
+            padding:15px;
+            border:10px solid white;
+            border-radius: 15px;
+            display:flex;
+            justify-content: space-around; 
+            align-items: center; 
+        }
+
+        .image-Vache{
+            border: 10px solid white;
+            border-radius: 15px;
+            width: 350px;
+            height: auto;
+        }
+
+        .milieu-Div{
+            background-color: #4169e1;
+            padding: 15px;
+            color:white;
+            border:5px solid white;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .commandes-Div{
+            background: linear-gradient(to bottom, #4169e1, #E31C79);
+            padding: 15px;
+            color: white;
+            border:5px solid white;
+            border-radius: 15px;
+            text-align: left;
+
+            display:flex;
+            justify-content: space-around;
+        }
+
+        .footer1 {
+            background-color: black;
+            color: white;
+            padding: 35px;
+            font-size: 24px;
+            border-top: 10px solid white;
+            text-align: center;
+        }
+
+        .boutons-Div{
+            border: 15px dotted white;
+            border-radius: 15px;
+            height: auto;
+            padding:15px;
+            padding-left: 300px;
+            padding-right: 300px;
+            text-align:center;
+        }
+
+        .boutons{
+            padding: 15px;
+            width: 30%;
+            font-size:30px;
+            background: #0a998c;
+            border: 5px;
+            border-radius: 30px;
+        }
+
+        .boutons:hover{
+                background: orange;
+        }
+
+        .footer{
+            background:black;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<div class="text-center" style="background:white;">
+
+    @* ----------Titre----------*@
+    <div class="titre">
+        <h1 class="display-1">Moo & Co.</h1>
+        <h2>Leader mondial de l’exportation bovine</h2>
+    </div>
+    
+    @* ----------Images----------*@
+    <div class="image-Vache-Div">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" class="image-Vache"/>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.-9eiwvhsNs3N4o93pvqKEAHaFj&pid=Api&P=0&h=180" class="image-Vache" />
+        <img src="https://tse3.explicit.bing.net/th?id=OIP.Gi2MdUzETFM2vHnCPmuc2QHaE7&pid=Api&P=0&h=180" class="image-Vache" />
+    </div>
+
+    @* ----------Section Bleu----------*@
+    <div class="milieu-Div">
+        <h1>Bienvenue a Moo & Co!</h1>
+
+        <h4>
+            Chez Moo & Co, nous sommes fiers d’être le leader mondial de l’exportation de vaches.
+            Forts de notre expertise et de notre engagement envers la qualité, nous collaborons avec des éleveurs du monde entier
+            pour offrir les meilleures races bovines. Notre mission est de garantir un élevage durable et éthique,
+            tout en répondant aux besoins de nos partenaires internationaux.
+            Bienvenue dans l’univers de l’excellence bovine !
+        </h4>
+    </div>
+
+    @* ----------Section Bleu----------*@
+    <div class="commandes-Div">
+        <div class="boutons-Div">
+            <h1>Creer Une Nouvelle Commande Avec Nous Aujourd’hui!</h1>
+            <br />
+            <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-primary boutons">Creer</a>
+        </div>
+    </div>
+
+    @* ----------Section Fait----------*@
+    <div class="footer1 display-1" >
+        <h1>Fait amusantes sur les vaches!!</h1>
+        
+        <h4>
+            Meilleures amies – Les vaches ont des meilleures amies et deviennent stressées si elles sont séparées.
+        </h4>
+    </div>
+</div>  
+
