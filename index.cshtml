@@ -16,25 +16,56 @@
             padding: 10px; 
             font-size: 24px; 
             font-weight:bolder;
+            border:10px solid white;
+            border-bottom: 5px solid white;
+            border-radius: 15px;
+            margin: 0;
         }
 
         .image-Vache-Div{
             background: linear-gradient(to bottom, #E31C79, #4169e1);
             padding:15px;
             border:10px solid white;
+            border-bottom: 5px solid white;
+            border-top: 5px solid white;
             border-radius: 15px;
-            display:flex;
-            justify-content: space-around; 
-            align-items: center; 
+            align-items: center;
+            margin: 0;
         }
 
         .image-Vache{
-            border: 10px solid white;
+            border: 5px solid white;
             border-radius: 15px;
-            width: 350px;
+            width: 550px;
             height: auto;
+            margin:10px;
         }
 
+        .info-Vache-Div{
+            color:white;
+            display:flex;
+            justify-content:space-around;
+            border: 5px solid aquamarine;
+        }
+
+        .info-Vache-Section{
+            border: 5px solid aquamarine;
+            padding:5px;
+            margin:20px;
+        }
+
+        .info-Vache-Titre-1 {
+            color: yellow;
+            font-weight: bolder;
+            border: 5px solid yellow;
+        }
+
+        .info-Vache-Titre-2{
+            color: aquamarine;
+            font-weight:bolder;
+        } 
+
+    
         .milieu-Div{
             background-color: #4169e1;
             padding: 15px;
@@ -85,7 +116,7 @@
         }
 
         .boutons:hover{
-                background: orange;
+            background: orange;
         }
 
         .footer{
@@ -100,8 +131,9 @@
 
         .droit-section {
             width: 220px;
-            padding: 15px;
-            background-color: white;
+            padding: 5px;
+            background-color: #87CEEB;
+            border: 5px solid white;
             border-radius: 15px;
             text-align: center;
         }
@@ -131,11 +163,22 @@
                 <h2>Leader mondial de l’exportation bovine</h2>
             </div>
 
-            @* ----------Images----------*@
+            @* ----------Images Div----------*@
             <div class="image-Vache-Div">
-                <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" class="image-Vache"/>
                 <img src="https://tse1.mm.bing.net/th?id=OIP.-9eiwvhsNs3N4o93pvqKEAHaFj&pid=Api&P=0&h=180" class="image-Vache" />
-                <img src="https://tse3.explicit.bing.net/th?id=OIP.Gi2MdUzETFM2vHnCPmuc2QHaE7&pid=Api&P=0&h=180" class="image-Vache" />
+
+                <h1 class="info-Vache-Titre-1">Voici Nos Veches Populaires!</h1>
+                <div class="info-Vache-Div">
+                    <div class"info-Vache-Section">
+                        <h1 class="info-Vache-Titre-2"> Francois </h1>
+                        <h2 class="info-Vache-Section">Célèbre pour son lait de haute qualité. Idéale pour les producteurs laitiers.</h2>
+                    </div>
+
+                    <div class"info-Vache-Section">
+                        <h1 class="info-Vache-Titre-2"> Vincent </h1>
+                        <h2 class="info-Vache-Section"> Vache rustique avec une fourrure épaisse, parfaite pour les climats froids. </h2>
+                    </div>
+                </div>
             </div>
 
             @* ----------Section Bleu----------*@
@@ -167,16 +210,24 @@
 
         <div class="droit-section">
             <h2>Nos Clients Témoignent 📢</h2>
-            <br /><br />
+            <br />
 
             <p>⭐⭐⭐⭐⭐</p>
             <p>“Moo & Co. offre les meilleures vaches du marché! Service rapide et fiable.” –Jean Dupont</p>
+
             <p>⭐⭐⭐⭐⭐</p>
             <p>“La qualité est exceptionnelle, je recommande fortement!” –Sophie Morel</p>
+
             <p>⭐⭐⭐⭐⭐</p>
             <p>“Livraison rapide et animaux en parfaite condition. Très satisfait de mon achat.” -Amélie Dubois</p>
-        </div>
 
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Des animaux bien traités, un service professionnel et des délais respectés.” -Thomas Berger</p>
+
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Je fais affaire avec Moo & Co. depuis des années, toujours satisfait!” - Philippe Durand</p>
+
+        </div>
     </div>
 
     @* -------------------------------------------*@
