@@ -1,6 +1,8 @@
 @{
     ViewData["Title"] = "Create / Edit";
 }
+@model CoreNetTest.Models.Expense
+
 <header>
     <style>
         body {
@@ -26,7 +28,7 @@
         }
 
         .image-Vache-Div {
-            background: #4169e1;
+            background: linear-gradient(to bottom, #4169e1, #E31C79);
             padding: 15px;
             border: 10px solid white;
             border-radius: 15px;
@@ -81,7 +83,6 @@
 
     </style>
 </header>
-@model CoreNetTest.Models.Expense
 
 <div style="background:white;">
 
@@ -95,21 +96,23 @@
         <form asp-action="CreateEditExpenseForm" asp-asp-controller="Home">
             <input hidden class="form-control" type="number" placeholder="0" asp-for="Id"/>
 
-            <label class="mt-4">Value $</label>
-            <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01"/>
+            <label class="mt-4">Nom</label>
+            <input class="form-control" type="text" placeholder="Nom"/>
 
-            <label class="mt-4">Description</label>
-            <input class="form-control" type="text" placeholder="Add a dexcription" asp-for="Description"/>
+            <label class="mt-4">Date de Naissance</label>
+            <input class="form-control" type="text" placeholder="Date de Naissance" />
+
+            <label class="mt-4">Telephone</label>
+            <input class="form-control" type="number" placeholder="Telephone" />
+
+            <label class="mt-4">Nombre de vaches</label>
+            <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01" />
+
+            <label class="mt-4">Description Extra</label>
+            <input class="form-control" type="text" placeholder="Add a description" />
 
             <button class="btn btn-primary mt-4 boutons" type="submit">Sumbit</button>
         </form>
-    </div>
-
-    @* ----------Images----------*@
-    <div class="image-Vache-Div">
-        <img src="https://tse4.mm.bing.net/th?id=OIP.yuO_l-dbVn8n0vulwb_hVgHaE8&pid=Api&P=0&h=180" class="image-Vache" />
-        <img src="https://tse1.mm.bing.net/th?id=OIP.Y8HONMRN7j1hIdkHvBciOQHaFn&pid=Api&P=0&h=180" class="image-Vache" />
-        <img src="https://tse1.mm.bing.net/th?id=OIP.pIZ9VFlqiZdZf5WelartYAHaE8&pid=Api&P=0&h=180" class="image-Vache" />
     </div>
 
     @* ----------Info----------*@
@@ -126,6 +129,14 @@
             Bienvenue dans l’univers de l’excellence bovine !
         </h4>
     </div>
+
+    @* ----------Images----------*@
+    <div class="image-Vache-Div">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.yuO_l-dbVn8n0vulwb_hVgHaE8&pid=Api&P=0&h=180" class="image-Vache" />
+        <img src="https://tse1.mm.bing.net/th?id=OIP.Y8HONMRN7j1hIdkHvBciOQHaFn&pid=Api&P=0&h=180" class="image-Vache" />
+        <img src="https://tse1.mm.bing.net/th?id=OIP.pIZ9VFlqiZdZf5WelartYAHaE8&pid=Api&P=0&h=180" class="image-Vache" />
+    </div>
+
 
     @* ----------Section Fait----------*@
     <div class="footer1 display-1">
