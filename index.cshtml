@@ -93,54 +93,103 @@
             color: white;
         }
 
+        .diviseur{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .droit-section {
+            width: 220px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .side-image {
+            width: 100%;
+            border-radius: 10px;
+            border: 5px solid #E31C79;
+        }
+
     </style>
 
 </head>
 
 <div class="text-center" style="background:white;">
 
-    @* ----------Titre----------*@
-    <div class="titre">
-        <h1 class="display-1">Moo & Co.</h1>
-        <h2>Leader mondial de l’exportation bovine</h2>
-    </div>
-    
-    @* ----------Images----------*@
-    <div class="image-Vache-Div">
-        <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" class="image-Vache"/>
-        <img src="https://tse1.mm.bing.net/th?id=OIP.-9eiwvhsNs3N4o93pvqKEAHaFj&pid=Api&P=0&h=180" class="image-Vache" />
-        <img src="https://tse3.explicit.bing.net/th?id=OIP.Gi2MdUzETFM2vHnCPmuc2QHaE7&pid=Api&P=0&h=180" class="image-Vache" />
-    </div>
+  <div class="diviseur">
 
-    @* ----------Section Bleu----------*@
-    <div class="milieu-Div">
-        <h1>Bienvenue a Moo & Co!</h1>
+        @* -------------------------------------------*@
+        @* ----------     Section Main     -----------*@
+        @* -------------------------------------------*@
 
-        <h4>
-            Chez Moo & Co, nous sommes fiers d’être le leader mondial de l’exportation de vaches.
-            Forts de notre expertise et de notre engagement envers la qualité, nous collaborons avec des éleveurs du monde entier
-            pour offrir les meilleures races bovines. Notre mission est de garantir un élevage durable et éthique,
-            tout en répondant aux besoins de nos partenaires internationaux.
-            Bienvenue dans l’univers de l’excellence bovine !
-        </h4>
-    </div>
+        <div>
+            @* ----------Titre----------*@
+            <div class="titre">
+                <h1 class="display-1">Moo & Co.</h1>
+                <h2>Leader mondial de l’exportation bovine</h2>
+            </div>
 
-    @* ----------Section Bleu----------*@
-    <div class="commandes-Div">
-        <div class="boutons-Div">
-            <h1>Creer Une Nouvelle Commande Avec Nous Aujourd’hui!</h1>
-            <br />
-            <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-primary boutons">Creer</a>
+            @* ----------Images----------*@
+            <div class="image-Vache-Div">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" class="image-Vache"/>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.-9eiwvhsNs3N4o93pvqKEAHaFj&pid=Api&P=0&h=180" class="image-Vache" />
+                <img src="https://tse3.explicit.bing.net/th?id=OIP.Gi2MdUzETFM2vHnCPmuc2QHaE7&pid=Api&P=0&h=180" class="image-Vache" />
+            </div>
+
+            @* ----------Section Bleu----------*@
+            <div class="milieu-Div">
+                <h1>Bienvenue a Moo & Co!</h1>
+
+                <h4>
+                    Chez Moo & Co, nous sommes fiers d’être le leader mondial de l’exportation de vaches.
+                    Forts de notre expertise et de notre engagement envers la qualité, nous collaborons avec des éleveurs du monde entier
+                    pour offrir les meilleures races bovines. Notre mission est de garantir un élevage durable et éthique,
+                    tout en répondant aux besoins de nos partenaires internationaux.
+                    Bienvenue dans l’univers de l’excellence bovine !
+                </h4>
+            </div>
+
+            @* ----------Section Bleu----------*@
+            <div class="commandes-Div">
+                <div class="boutons-Div">
+                    <h1>Creer Une Nouvelle Commande Avec Nous Aujourd’hui!</h1>
+                    <br />
+                    <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-primary boutons">Creer</a>
+                </div>
+            </div>
         </div>
+
+        @* -------------------------------------------*@
+        @* ----------     Section Droit     ----------*@
+        @* -------------------------------------------*@
+
+        <div class="droit-section">
+            <h2>Nos Clients Témoignent 📢</h2>
+            <br /><br />
+
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Moo & Co. offre les meilleures vaches du marché! Service rapide et fiable.” –Jean Dupont</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“La qualité est exceptionnelle, je recommande fortement!” –Sophie Morel</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Livraison rapide et animaux en parfaite condition. Très satisfait de mon achat.” -Amélie Dubois</p>
+        </div>
+
     </div>
 
-    @* ----------Section Fait----------*@
-    <div class="footer1 display-1" >
-        <h1>Fait amusantes sur les vaches!!</h1>
+    @* -------------------------------------------*@
+    @* ----------     Section Bas     ----------*@
+    @* -------------------------------------------*@
+        <div class="footer1 display-1" >
+              <h1>Fait amusantes sur les vaches!!</h1>
         
-        <h4>
-            Meilleures amies – Les vaches ont des meilleures amies et deviennent stressées si elles sont séparées.
-        </h4>
-    </div>
+              <h4>
+                    Meilleures amies – Les vaches ont des meilleures amies et deviennent stressées si elles sont séparées.
+              </h4>
+        </div>
+
+
 </div>  
 
