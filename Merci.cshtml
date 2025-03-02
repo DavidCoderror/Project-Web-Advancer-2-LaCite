@@ -20,12 +20,13 @@
             font-weight: bolder;
             border: 10px solid white;
             border-radius: 15px;
+            margin:0;
         }
 
         .image-Check-Div {
             background: linear-gradient(to bottom, #E31C79, #4169e1);
             padding: 15px;
-            border: 10px solid white;
+            border: 5px solid white;
             border-radius: 15px;
             display: flex;
             justify-content: space-around;
@@ -33,14 +34,34 @@
         }
 
         .image-Check {
-            border: 10px solid white;
+            border: 5px solid white;
             border-radius: 15px;
             width: 50%;
             height: auto;
         }
 
         .informations-Div {
-            background: #4169e1;
+            background: #6B8E23;
+            padding: 15px;
+            color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        .informations-Div-2 {
+            background: #E67E22;
+            padding: 15px;
+            color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        .informations-Div-3 {
+            background: linear-gradient(to right, #E67E22, #6B8E23);
             padding: 15px;
             color: white;
             border: 5px solid white;
@@ -52,8 +73,21 @@
         .informations-Commande-Div {
             background: #4169e1;
             padding: 15px;
-            border: 10px solid white;
+            border: 5px solid white;
             border-radius: 15px;
+            text-align:center;
+            color:white;
+            display:flex
+        }
+
+        .titre-Info-1 {
+            font-size: 45px;
+            color: gold;
+        }
+
+        .titre-Info-2{
+            font-size:35px;
+            color: #002147;
         }
 
         .retournez-div {
@@ -96,7 +130,7 @@
         
     </style>
 </header>
-@model CoreNet_Project_2_Web_Avancer.Models.InformationVache //Model
+@model CoreNet_Project_2_Web_Avancer.Models.InformationVache //Model <---- :)
 
 <div style="background:white;">
 
@@ -109,7 +143,7 @@
     <div class="image-Check-Div">
         <img src="https://static.vecteezy.com/system/resources/thumbnails/017/110/950/original/green-check-mark-icon-animation-animated-check-mark-on-white-background-free-video.jpg" class="image-Check" />
         <div class="informations-Div">
-            <h1>
+            <h1 class="titre-Info-1">
                 Merci pour votre achat chez Moo & Co. !
 
             </h1>
@@ -121,18 +155,32 @@
             </h4>
         </div>
     </div>
+    @* ----------Div de Texte ----------*@
+    <div class="informations-Commande-Div">
+        <div class="informations-Div-3">
+            <h2>Merci pour votre demande ! Nous avons bien reçu vos informations
+                et nous vous contacterons sous peu pour vous proposer vos options. 
+                Si vous avez des questions urgentes, n'hésitez pas à nous joindre directement. 
+                À très bientôt !
+            </h2>
+        </div>
+    </div>
 
     @* ----------Div Info Produit----------*@
     <div class="informations-Commande-Div">
-       <h1>INFORMATION SUR LA COMMANDE</h1>
-       <br />
-       <h3> Nom: @Model.Nom </h3>
-       <h3> Date de Naissance: @Model.DateDeNaissance </h3>
-       <h3> Telephone: @Model.Telephone </h3>
-       <h3> Nombre de Vaches: @Model.NombreDeVache </h3>
-       <h3> Budget: @Model.Budget $ </h3>
-       <br />
-       <h3> @Model.Description </h3>
+
+        <div class=informations-Div-2>
+            <h1 class="titre-Info-1">INFORMATION SUR LA COMMANDE</h1>
+            <h3> <span class="titre-Info-2">Nom:</span> @Model.Nom </h3>
+            <h3> <span class="titre-Info-2">Date de Naissance:</span> @Model.DateDeNaissance </h3>
+            <h3> <span class="titre-Info-2">Telephone:</span> @Model.Telephone </h3>
+            <h3> <span class="titre-Info-2">Nombre de Vaches:</span> @Model.NombreDeVache </h3>
+            <h3> <span class="titre-Info-2">Budget:</span> @Model.Budget $ </h3>
+            <br />
+            <h2 class="titre-Info-2">Information Extra?</h2>
+            <h3> @Model.Description </h3>
+        </div>
+        <img src="https://media.istockphoto.com/id/1477105312/photo/cow-sniffing-head-up-lifted-red-and-white-milk-cattle-and-a-spying-eye-under-a-blue-sky.jpg?s=612x612&w=0&k=20&c=w5fsfbvjI-Dl8m4Dst4EP1fItw7pvuH38KI2A6B3-Kc=" class="image-Check" />
 
     </div>
 
