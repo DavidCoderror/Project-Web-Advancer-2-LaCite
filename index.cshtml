@@ -6,10 +6,16 @@
     <style>
         body {
             background-image: url( https://tse2.mm.bing.net/th?id=OIP.aYJviSN65CFTHkHbkYYyOQHaHa&pid=Api&P=0&h=180);
-            font-size: 20px;
+            font-size: 40px;
             font-weight: bolder;
+            margin-bottom:0;
+
         }
-        
+
+        p{
+            font-size: 20px;
+        }
+
         .titre{
             background-color: #E31C79;
             color: white;
@@ -65,7 +71,7 @@
             font-weight:bolder;
         } 
 
-    
+
         .milieu-Div{
             background-color: #4169e1;
             padding: 15px;
@@ -126,6 +132,7 @@
         .footer{
             background:black;
             color: white;
+            padding:100px;
         }
 
         .diviseur{
@@ -173,12 +180,12 @@
 
                 <h1 class="info-Vache-Titre-1">Voici Nos Veches Populaires!</h1>
                 <div class="info-Vache-Div">
-                    <div class"info-Vache-Section">
+                    <div>
                         <h1 class="info-Vache-Titre-2"> Francois </h1>
                         <h2 class="info-Vache-Section">Célèbre pour son lait de haute qualité. Idéale pour les producteurs laitiers.</h2>
                     </div>
 
-                    <div class"info-Vache-Section">
+                    <div >
                         <h1 class="info-Vache-Titre-2"> Vincent </h1>
                         <h2 class="info-Vache-Section"> Vache rustique avec une fourrure épaisse, parfaite pour les climats froids. </h2>
                     </div>
@@ -203,7 +210,7 @@
                 <div class="boutons-Div">
                     <h1>Creer Une Nouvelle Commande Avec Nous Aujourd’hui!</h1>
                     <br />
-                    <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-primary boutons">Creer</a>
+                    <a asp-controller="Home" asp-action="Commandes" class="btn btn-primary boutons">Creer</a>
                 </div>
             </div>
         </div>
@@ -240,7 +247,7 @@
     @* -------------------------------------------*@
         <div class="footer1 display-1" >
               <h1>Fait amusantes sur les vaches!!</h1>
-        
+
               <h4>
                     Meilleures amies – Les vaches ont des meilleures amies et deviennent stressées si elles sont séparées.
               </h4>
@@ -248,4 +255,3 @@
 
 
 </div>  
-
