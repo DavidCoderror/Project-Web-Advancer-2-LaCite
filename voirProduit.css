@@ -1,0 +1,94 @@
+body {
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.aYJviSN65CFTHkHbkYYyOQHaHa&pid=Api&P=0&h=180);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.titre {
+    background-color: #E31C79;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.informations-Commande-Div {
+    background: #4169e1; 
+    padding: 15px;
+    border: 5px solid white;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.informations-Div-2 {
+    background: #E67E22; 
+    padding: 20px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    text-align: center;
+    width: 45%;
+    min-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titre-Info-1 {
+    font-size: 45px;
+    color: gold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.titre-Info-2 {
+    font-size: 35px;
+    color: #002147; 
+    font-weight: bold;
+}
+
+.image-Check {
+    border: 5px solid white;
+    border-radius: 15px;
+    width: 40%;
+    height: auto;
+    min-width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer1 {
+    background: black;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    border-top: 5px solid white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.boutons {
+    padding: 10px;
+    width: 30%;
+    font-size: 20px;
+    background: #0a998c;
+    border: white 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+}
+
+.boutons:hover {
+    background: orange;
+}
