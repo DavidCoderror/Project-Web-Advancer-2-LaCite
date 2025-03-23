@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="voirProduit.css">
+</head>
+<body>
+    <div>
+        <h1 class="titre">Nos Produits</h1>
+
+        <div class="informations-Commande-Div">
+            <div class=informations-Div-2>
+                <h3> <span class="titre-Info-2">Nom:</span> @Model.Nom </h3>
+                <h3> <span class="titre-Info-2">Date de Naissance:</span> @Model.DateDeNaissance </h3>
+                <h3> <span class="titre-Info-2">Telephone:</span> @Model.Telephone </h3>
+                <h3> <span class="titre-Info-2">Nombre de Vaches:</span> @Model.NombreDeVache </h3>
+                <h3> <span class="titre-Info-2">Budget:</span> @Model.Budget $ </h3>
+                <h2 class="titre-Info-2">Information Extra?</h2>
+                <h3> @Model.Description </h3>
+            </div>    
+        </div>
+
+    <!------------------------------------------------------>
+        <div class="footer1">
+            <h2>Faits amusants sur les vaches !</h2>
+            <p>Chaque vache a une voix unique, et leurs meuglements permettent aux autres de les reconnaître.</p>
+        </div>
+    </div>
+</body>
+</html>
